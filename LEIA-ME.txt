@@ -1,0 +1,5 @@
+MICOMP - Site institucional dos Anais do Evento Científico
+
+Abra o arquivo index.html em um navegador.
+As imagens e textos são demonstrativos e podem ser substituídos mantendo os mesmos nomes de arquivo.
+Os botões de PDF e redes sociais estão preparados como links de exemplo.
