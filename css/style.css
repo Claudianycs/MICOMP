@@ -37,12 +37,12 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--light);
 }
 
 .a-link {
     text-decoration: none;
-    color: #263247;
+    color: var(--navy);
 }
 
 .container {
@@ -206,7 +206,7 @@ a {
     display: grid;
     place-items: center;
     text-align: center;
-    color: white;
+    color: var(--navy);
     background: var(--grad);
     position: relative;
     overflow: hidden
