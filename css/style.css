@@ -40,10 +40,6 @@ a {
     color: #0F172A;
 }
 
-p {
-    text-align: justify;
-}
-
 .a-link {
     text-decoration: none;
     color: var(--light);
@@ -929,7 +925,6 @@ tr:hover td {
 }
 
 .highlight-authors {
-    color: var(--blue)!important;
     font-weight: 700
 }
 
