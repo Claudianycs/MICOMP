@@ -1262,3 +1262,102 @@ tr:hover td {
         text-align: center!important
     }
 }
+
+
+/* =========================
+   WORKSHOPS
+========================= */
+
+.workshops-intro {
+    max-width: 750px;
+    margin-bottom: 32px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.workshops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.workshop-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.workshop-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+}
+
+
+/* Card/arte de divulgação */
+
+.workshop-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Informações */
+
+.workshop-content {
+    padding: 20px;
+}
+
+.workshop-content h3 {
+    margin: 0 0 10px;
+    color: #0f172a;
+    font-size: 1.15rem;
+}
+
+.workshop-speaker {
+    margin: 0 0 16px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.workshop-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+    color: #475569;
+    font-size: 0.9rem;
+}
+
+.btn-workshop {
+    display: inline-block;
+    padding: 9px 18px;
+    background: #007a95;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.btn-workshop:hover {
+    background: #006579;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+    .workshops-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .workshops-grid {
+        grid-template-columns: 1fr;
+    }
+}
