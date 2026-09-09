@@ -355,7 +355,6 @@ a {
 .tech-art {
     min-height: 430px;
     border-radius: var(--radius);
-    background: var(--grad);
     position: relative;
     overflow: hidden;
     box-shadow: var(--shadow)
