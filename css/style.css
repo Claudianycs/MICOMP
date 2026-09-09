@@ -377,6 +377,118 @@ a {
     font-weight: 800
 }
 
+.banner-copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-copy .tech-art {
+    display: block;
+    width: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+}
+
+.year-hero {
+    position: relative;
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px 20px;
+    overflow: hidden;
+}
+
+.year-hero .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-hero .banner-copy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-hero .tech-art {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto !important;
+    object-fit: contain;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .year-hero {
+        min-height: 400px;
+        padding: 50px 20px;
+    }
+    .year-hero .container {
+        max-width: 850px;
+    }
+    .year-hero .banner-copy {
+        width: 90%;
+    }
+    .year-hero .tech-art {
+        width: 100%;
+        height: auto !important;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .year-hero {
+        min-height: 280px;
+        padding: 30px 12px;
+        background-size: cover;
+        background-position: center;
+    }
+    .year-hero .container {
+        width: 100%;
+        padding: 0;
+    }
+    .year-hero .banner-copy {
+        width: 82%;
+        margin: 0 auto;
+    }
+    .year-hero .tech-art {
+        width: 100%;
+        height: auto !important;
+        max-width: 100%;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 400px) {
+    .year-hero {
+        min-height: 230px;
+        padding: 22px 8px;
+    }
+    .year-hero .banner-copy {
+        width: 76%;
+    }
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1264,138 +1376,74 @@ tr:hover td {
 }
 
 
-/* ==================================================
-   WORKSHOPS
-   Estilos adicionais — reutiliza os cards existentes
-   ================================================== */
-
-
-/* Botão de inscrição */
-
-.workshop-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 16px;
-    padding: 11px 22px;
-    background: #007a95;
-    color: #ffffff;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
-    transition: all 0.25s ease;
-}
-
-.workshop-button:hover {
-    background: #00677d;
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 122, 149, 0.22);
-}
-
-
-/* Aviso de público restrito */
-
-.workshop-alert {
-    margin-top: 14px;
-    padding: 10px 12px;
-    background: #fff8e6;
-    border-left: 3px solid #f0ad4e;
-    border-radius: 6px;
-    font-size: 0.88rem;
-    line-height: 1.5;
-    color: #444;
-}
-
-
-/* Informações adicionais: data, horário, local etc. */
-
-.workshop-info {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-    margin-top: 14px;
-    font-size: 0.9rem;
-    color: #64748b;
-}
-
-.workshop-info span {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-}
-
-
-/* Ajustes para celular */
-
-@media (max-width: 600px) {
-    .workshop-button {
-        width: 100%;
-        margin-top: 14px;
-    }
-    .workshop-info {
-        flex-direction: column;
-        gap: 6px;
-    }
-    .workshop-alert {
-        font-size: 0.84rem;
-    }
-}
-
-
-/* =========================================
-   ALUNOS ORGANIZADORES
-   ========================================= */
+/* ==========================================
+   ALUNOS ORGANIZADORES - 5 POR LINHA
+   ========================================== */
 
 .organizers-intro {
-    max-width: 650px;
-    margin: 0 0 32px;
+    max-width: 700px;
+    margin: 0 0 28px;
     color: #64748b;
     line-height: 1.6;
 }
 
 
-/* 4 alunos na mesma linha */
+/* GRID - 5 CARDS NA MESMA LINHA */
 
 .organizers-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    width: 100%;
+    margin-top: 28px;
 }
 
 
-/* Card */
+/* CARD */
 
 .organizer-card {
+    min-width: 0;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 12px 20px;
     background: #ffffff;
     border: 1px solid #e5e7eb;
-    border-radius: 16px;
-    padding: 28px 20px;
+    border-radius: 14px;
     text-align: center;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
+
+/* EFEITO AO PASSAR O MOUSE */
+
 .organizer-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     border-color: rgba(0, 122, 149, 0.35);
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.09);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
 }
 
 
-/* Foto */
+/* FOTO */
 
 .organizer-photo {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    flex-shrink: 0;
+    margin: 0 auto 15px;
     overflow: hidden;
-    border: 4px solid #eef8fa;
+    border-radius: 50%;
+    border: 3px solid #e7f5f7;
+    background: #f8fafc;
 }
 
+
+/* IMAGEM */
+
 .organizer-photo img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1403,48 +1451,89 @@ tr:hover td {
 }
 
 
-/* Nome */
+/* NOME DO ALUNO */
 
 .organizer-card h3 {
+    width: 100%;
+    min-height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 0 7px;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 700;
+    line-height: 1.3;
     color: #0f172a;
 }
 
 
-/* Responsabilidade */
+/* RESPONSABILIDADE */
 
 .organizer-role {
+    width: 100%;
     margin: 0;
-    color: #007a95;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     font-weight: 600;
     line-height: 1.4;
+    color: #007a95;
 }
 
 
-/* TABLET */
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
 
-@media (max-width: 900px) {
+
+/* Mantém os 5 ainda em notebooks */
+
+@media (max-width: 1100px) {
     .organizers-grid {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .organizer-card {
+        padding: 20px 9px 18px;
+    }
+    .organizer-photo {
+        width: 85px;
+        height: 85px;
+    }
+    .organizer-card h3 {
+        font-size: 0.88rem;
+    }
+    .organizer-role {
+        font-size: 0.78rem;
     }
 }
 
 
-/* CELULAR */
+/* Tablet */
+
+@media (max-width: 850px) {
+    .organizers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    .organizer-photo {
+        width: 95px;
+        height: 95px;
+    }
+    .organizer-card h3 {
+        font-size: 0.95rem;
+    }
+    .organizer-role {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* Celular */
 
 @media (max-width: 520px) {
     .organizers-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 14px;
     }
     .organizer-card {
-        padding: 24px 18px;
-    }
-    .organizer-photo {
-        width: 105px;
-        height: 105px;
+        padding: 22px 16px;
     }
 }
